@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Home</title>
+</head>
+<body>
+    <!-- Background Video -->
+    <video src="assets/video/bg.mp4" class="bgv" autoplay muted loop></video>
+    <!-- Background Video End -->
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo"><img src="assets/img/icon/logo.png" alt=""></div>
+        <!-- Logo End -->
+
+        <!-- Options Game -->
+        <div class="options-game">
+            <div class="game"onclick="showResultAngka()"><img src="assets/img/icon/angka.png" alt=""></div>
+            <div class="game"onclick="showResultHuruf()"><img src="assets/img/icon/huruf.png" alt=""></div>
+            <div class="game"onclick="showResultBuah()"><img src="assets/img/icon/icon-buah.png" alt=""></div>
+            <div class="game"onclick="showResultSayur()"><img src="assets/img/icon/icon-sayur.png" alt=""></div>
+            <div class="game"onclick="showResultHewan()"><img src="assets/img/icon/icon-hewan.png" alt=""></div>
+        </div>
+        <!-- Options End -->
+
+        <!-- Box Questions Angka -->
+        <div class="box-questions" id="result-angka">
+            <h2>Opsi Game Angka</h2>
+            <div class="opsi">
+                <p class="options" onclick="mengenalAngka()">Mengenal</p>
+                <p class="options" onclick="pertanyaanAngka()">Pertanyaan ?</p>
+            </div>
+            <div class="close-box" id="close-result" onclick="closeResult()"><img src="assets/img/icon/close.png" alt=""></div>
+        </div>
+        <!-- Box Questions Angka End -->
+
+        <!-- Box Questions Huruf -->
+        <div class="box-questions" id="result-huruf">
+            <h2>Opsi Game Huruf</h2>
+            <div class="opsi">
+                <p class="options" onclick="mengenalHuruf()">Mengenal</p>
+                <p class="options" onclick="pertanyaanHuruf()">Pertanyaan ?</p>
+            </div>
+            <div class="close-box" id="close-result" onclick="closeResult()"><img src="assets/img/icon/close.png" alt=""></div>
+        </div>
+        <!-- Box Questions Huruf End -->
+
+        <!-- Box Questions Buah -->
+        <div class="box-questions" id="result-buah">
+            <h2>Opsi Game Buah</h2>
+            <div class="opsi">
+                <p class="options" onclick="mengenalBuah()">Mengenal</p>
+                <p class="options" onclick="pertanyaanBuah()">Pertanyaan ?</p>
+            </div>
+            <div class="close-box" id="close-result" onclick="closeResult()"><img src="assets/img/icon/close.png" alt=""></div>
+        </div>
+        <!-- Box Questions Buah End -->
+
+        <!-- Box Questions Sayur -->
+        <div class="box-questions" id="result-sayur">
+            <h2>Opsi Game Sayur</h2>
+            <div class="opsi">
+                <p class="options" onclick="mengenalSayur()">Mengenal</p>
+                <p class="options" onclick="pertanyaanSayur()">Pertanyaan ?</p>
+            </div>
+            <div class="close-box" id="close-result" onclick="closeResult()"><img src="assets/img/icon/close.png" alt=""></div>
+        </div>
+        <!-- Box Questions Sayur End -->
+        
+        <!-- Box Questions Hewan -->
+        <div class="box-questions" id="result-hewan">
+            <h2>Opsi Game Hewan</h2>
+            <div class="opsi">
+                <p class="options" onclick="mengenalHewan()">Mengenal</p>
+                <p class="options" onclick="pertanyaanHewan()">Pertanyaan ?</p>
+            </div>
+            <div class="close-box" id="close-result" onclick="closeResult()"><img src="assets/img/icon/close.png" alt=""></div>
+        </div>
+        <!-- Box Questions Hewan End -->
+    </div>
+
+    <!-- First Layout -->
+     <div class="first-layout">
+        <div class="content-layout">
+            <p>Selamat Datang Di Game Edukasi Anak</p>
+            <p>Belajar Itu Menyenangkan !!!</p>
+            <button id="mulai-game" onclick="playGame()">Mulai Game</button>
+        </div>
+     </div>
+
+    <!-- Audio Select -->
+    <audio id="select">
+        <source src="assets/audio/backsound/select.mp3" type="audio/mp3">
+    </audio>
+    <!-- Audio Select End -->
+
+    <!-- Audio Backsound -->
+     <audio id="Backsound">
+        <source src="assets/audio/backsound/backsound.mp3" type="audio/mp3">
+     </audio>
+    <!-- Logic -->
+    <script src="assets/js/main.js"></script>
+    <!-- Logic End -->
+</body>
+</html>

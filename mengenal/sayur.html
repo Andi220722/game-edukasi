@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>Mengenal Sayur</title>
+  </head>
+  <body>
+    <!-- Background Video -->
+    <video src="../assets/video/bg.mp4" class="bgv" autoplay muted loop></video>
+    <!-- Background Video End -->
+
+    <!-- Descriptions -->
+    <div class="desc">
+      <h1>Mari Mengenal Sayur</h1>
+    </div>
+    <!-- Descriptions End -->
+
+    <!-- Content -->
+    <div class="content">
+      <!-- Item -->
+      <div class="item" id="sayur" onclick="btn1()"><img src="../assets/img/sayur/bawang-merah.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="btn2()"><img src="../assets/img/sayur/bawang-putih.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="btn3()"><img src="../assets/img/sayur/bayam.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="btn4()"><img src="../assets/img/sayur/brokoli.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="btn5()"><img src="../assets/img/sayur/buncis.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="btn6()"><img src="../assets/img/sayur/cabai.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="btn7()"><img src="../assets/img/sayur/jagung.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="btn8()"><img src="../assets/img/sayur/kentang.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="btn9()"><img src="../assets/img/sayur/kol.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="btn10()"><img src="../assets/img/sayur/labu.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="btn11()"><img src="../assets/img/sayur/selada.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="btn12()"><img src="../assets/img/sayur/terong.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="btn13()"><img src="../assets/img/sayur/timun.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="btn14()"><img src="../assets/img/sayur/tomat.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="btn15()"><img src="../assets/img/sayur/wortel.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="btn16()"><img src="../assets/img/sayur/jamur.jpg" alt="jamur" /></div>
+      <div class="item" id="sayur" onclick="btn17()"><img src="../assets/img/sayur/daun-bawang.jpg" alt="daun-bawang" /></div>
+      <div class="item" id="sayur" onclick="btn18()"><img src="../assets/img/sayur/paprika.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="btn19()"><img src="../assets/img/sayur/kangkung.webp" alt="kangkung" /></div>
+      <div class="item" id="sayur" onclick="btn20()"><img src="../assets/img/sayur/bawang-bombai.jpg" alt="bawang-bombai" /></div>
+      <!-- Item End -->
+    </div>
+    <!-- Content End -->
+
+    <!-- Navigasi -->
+    <div class="navigation">
+      <div class="navigate" id="back" onclick="kembali()"><img src="../assets/img/icon/icon-kiri.png" alt="" /></div>
+      <div class="navigate" id="next"><img src="../assets/img/icon/icon-kanan.png" alt="" /></div>
+    </div>
+
+    <!-- Sound Item -->
+    <audio id="sound1">
+      <source src="../assets/audio/sayur/bawang-merah.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound2">
+      <source src="../assets/audio/sayur/bawang_putih.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound3">
+      <source src="../assets/audio/sayur/bayam.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound4">
+      <source src="../assets/audio/sayur/brokoli.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound5">
+      <source src="../assets/audio/sayur/buncis.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound6">
+      <source src="../assets/audio/sayur/cabai.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound7">
+      <source src="../assets/audio/sayur/jagung.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound8">
+      <source src="../assets/audio/sayur/kentang.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound9">
+      <source src="../assets/audio/sayur/kol.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound10">
+      <source src="../assets/audio/sayur/labu.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound11">
+      <source src="../assets/audio/sayur/selada.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound12">
+      <source src="../assets/audio/sayur/terong.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound13">
+      <source src="../assets/audio/sayur/timun.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound14">
+      <source src="../assets/audio/sayur/tomat.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound15">
+      <source src="../assets/audio/sayur/wortel.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound16">
+      <source src="../assets/audio/sayur/jamur.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound17">
+      <source src="../assets/audio/sayur/daun+bawang.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound18">
+      <source src="../assets/audio/sayur/paprika.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound19">
+      <source src="../assets/audio/sayur/kangkung.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound20">
+      <source src="../assets/audio/sayur/bawang+bombay.mp3" type="audio/mp3" />
+    </audio>
+
+    <!-- Script Mengenal Angka -->
+    <script>
+      function btn1() {
+        const suara = document.getElementById("sound1");
+        suara.play();
+      }
+      function btn2() {
+        const suara = document.getElementById("sound2");
+        suara.play();
+      }
+      function btn3() {
+        const suara = document.getElementById("sound3");
+        suara.play();
+      }
+      function btn4() {
+        const suara = document.getElementById("sound4");
+        suara.play();
+      }
+      function btn5() {
+        const suara = document.getElementById("sound5");
+        suara.play();
+      }
+      function btn6() {
+        const suara = document.getElementById("sound6");
+        suara.play();
+      }
+      function btn7() {
+        const suara = document.getElementById("sound7");
+        suara.play();
+      }
+      function btn8() {
+        const suara = document.getElementById("sound8");
+        suara.play();
+      }
+      function btn9() {
+        const suara = document.getElementById("sound9");
+        suara.play();
+      }
+      function btn10() {
+        const suara = document.getElementById("sound10");
+        suara.play();
+      }
+      function btn11() {
+        const suara = document.getElementById("sound11");
+        suara.play();
+      }
+      function btn12() {
+        const suara = document.getElementById("sound12");
+        suara.play();
+      }
+      function btn13() {
+        const suara = document.getElementById("sound13");
+        suara.play();
+      }
+      function btn14() {
+        const suara = document.getElementById("sound14");
+        suara.play();
+      }
+      function btn15() {
+        const suara = document.getElementById("sound15");
+        suara.play();
+      }
+      function btn16() {
+        const suara = document.getElementById("sound16");
+        suara.play();
+      }
+      function btn17() {
+        const suara = document.getElementById("sound17");
+        suara.play();
+      }
+      function btn18() {
+        const suara = document.getElementById("sound18");
+        suara.play();
+      }
+      function btn19() {
+        const suara = document.getElementById("sound19");
+        suara.play();
+      }
+      function btn20() {
+        const suara = document.getElementById("sound20");
+        suara.play();
+      }
+      function kembali() {
+        window.location.href = "../index.html";
+      }
+    </script>
+    <!-- Navigasi End -->
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script src="../assets/js/main.js"></script>
+    <title>Mengenal Angka</title>
+  </head>
+  <body id="body">
+    <!-- Background Video -->
+
+    <video src="../assets/video/bg.mp4" class="bgv" autoplay muted loop></video>
+    <!-- Background Video End -->
+
+    <!-- Descriptions -->
+    <div class="desc">
+      <h1>Dimanakah Angka 4 ?</h1>
+    </div>
+    <!-- Descriptions End -->
+
+    <!-- Content -->
+    <div class="content">
+      <!-- Item -->
+      <div class="item" onclick="soundSalah()">1</div>
+      <div class="item" onclick="soundSalah()">2</div>
+      <div class="item" onclick="soundSalah()">3</div>
+      <div class="item" onclick="next()">4</div>
+      <div class="item" onclick="soundSalah()">5</div>
+      <div class="item" onclick="soundSalah()">6</div>
+      <div class="item" onclick="soundSalah()">7</div>
+      <div class="item" onclick="soundSalah()">8</div>
+      <div class="item" onclick="soundSalah()">9</div>
+      <div class="item" onclick="soundSalah()">10</div>
+      <div class="item" onclick="soundSalah()">11</div>
+      <div class="item" onclick="soundSalah()">12</div>
+      <div class="item" onclick="soundSalah()">13</div>
+      <div class="item" onclick="soundSalah()">14</div>
+      <div class="item" onclick="soundSalah()">15</div>
+      <div class="item" onclick="soundSalah()">16</div>
+      <div class="item" onclick="soundSalah()">17</div>
+      <div class="item" onclick="soundSalah()">18</div>
+      <div class="item" onclick="soundSalah()">19</div>
+      <div class="item" onclick="soundSalah()">20</div>
+      <!-- Item End -->
+    </div>
+    <!-- Content End -->
+    <!-- Notifikasi -->
+    <div class="result-benar" id="result-benar" onclick="clearNotif()">
+      <div class="hore">
+        <img src="../assets/img/icon/benar.png" alt="" />
+      </div>
+    </div>
+    <div class="result-salah" id="result-salah" onclick="clearNotifSalah()">
+      <div class="hore">
+        <img src="../assets/img/icon/salah.png" alt="" />
+      </div>
+    </div>
+    <!-- Notifikasi End -->
+
+    <!-- Sound Item -->
+    <audio id="sound1">
+      <source src="../assets/audio/angka/1.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound2">
+      <source src="../assets/audio/angka/2.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound3">
+      <source src="../assets/audio/angka/3.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound4">
+      <source src="../assets/audio/angka/4.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound5">
+      <source src="../assets/audio/angka/5.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound6">
+      <source src="../assets/audio/angka/6.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound7">
+      <source src="../assets/audio/angka/7.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound8">
+      <source src="../assets/audio/angka/8.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound9">
+      <source src="../assets/audio/angka/9.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound-yeay">
+      <source src="../assets/audio/backsound/benar.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound-salah">
+      <source src="../assets/audio/backsound/salah.mp3" type="audio/mp3" />
+    </audio>
+    <script src="../assets/js/main.js"></script>
+    <script>
+      function next() {
+        const suara = document.getElementById("sound-yeay");
+        suara.play();
+        const resultBenar = document.getElementById("result-benar");
+        resultBenar.style.display = "flex";
+        setTimeout(() => {
+          window.location.href = "angka3.html";
+        }, 2000);
+      }
+    </script>
+  </body>
+</html>

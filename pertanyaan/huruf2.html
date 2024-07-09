@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>Mengenal Huruf</title>
+  </head>
+  <body>
+    <!-- Background Video -->
+    <video src="../assets/video/bg.mp4" class="bgv" autoplay muted loop></video>
+    <!-- Background Video End -->
+
+    <!-- Descriptions -->
+    <div class="desc">
+      <h1>Dimanakah Huruf K ?</h1>
+    </div>
+    <!-- Descriptions End -->
+
+    <!-- Content -->
+    <div class="content">
+      <!-- Item -->
+      <div class="item" onclick="soundSalah()">A</div>
+      <div class="item" onclick="soundSalah()">B</div>
+      <div class="item" onclick="soundSalah()">C</div>
+      <div class="item" onclick="soundSalah()">D</div>
+      <div class="item" onclick="soundSalah()">E</div>
+      <div class="item" onclick="soundSalah()">F</div>
+      <div class="item" onclick="soundSalah()">G</div>
+      <div class="item" onclick="soundSalah()">H</div>
+      <div class="item" onclick="soundSalah()">I</div>
+      <div class="item" onclick="soundSalah()">J</div>
+      <div class="item" onclick="next()">K</div>
+      <div class="item" onclick="soundSalah()">L</div>
+      <div class="item" onclick="soundSalah()">M</div>
+      <div class="item" onclick="soundSalah()">N</div>
+      <div class="item" onclick="soundSalah()">O</div>
+      <div class="item" onclick="soundSalah()">P</div>
+      <div class="item" onclick="soundSalah()">Q</div>
+      <div class="item" onclick="soundSalah()">R</div>
+      <div class="item" onclick="soundSalah()">S</div>
+      <div class="item" onclick="soundSalah()">T</div>
+      <div class="item" onclick="soundSalah()">U</div>
+      <div class="item" onclick="soundSalah()">V</div>
+      <div class="item" onclick="soundSalah()">W</div>
+      <div class="item" onclick="soundSalah()">X</div>
+      <div class="item" onclick="soundSalah()">Y</div>
+      <div class="item" onclick="soundSalah()">Z</div>
+      <!-- Item End -->
+    </div>
+    <!-- Content End -->
+    <!-- Notifikasi -->
+    <div class="result-benar" id="result-benar" onclick="clearNotif()">
+      <div class="hore">
+        <img src="../assets/img/icon/benar.png" alt="" />
+      </div>
+    </div>
+    <div class="result-salah" id="result-salah" onclick="clearNotifSalah()">
+      <div class="hore">
+        <img src="../assets/img/icon/salah.png" alt="" />
+      </div>
+    </div>
+    <!-- Notifikasi End -->
+    <!-- Sound Yeay -->
+    <audio id="sound-yeay">
+      <source src="../assets/audio/backsound/benar.mp3" />
+    </audio>
+    <audio id="sound-salah">
+      <source src="../assets/audio/backsound/salah.mp3" />
+    </audio>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+      function next() {
+        const suara = document.getElementById("sound-yeay");
+        suara.play();
+        const resultBenar = document.getElementById("result-benar");
+        resultBenar.style.display = "flex";
+        setTimeout(() => {
+          window.location.href = "huruf3.html";
+        }, 2000);
+      }
+    </script>
+  </body>
+</html>

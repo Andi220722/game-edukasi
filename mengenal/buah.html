@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>Mengenal Buah</title>
+  </head>
+  <body>
+    <!-- Background Video -->
+    <video src="../assets/video/bg.mp4" class="bgv" autoplay muted loop></video>
+    <!-- Background Video End -->
+
+    <!-- Descriptions -->
+    <div class="desc">
+      <h1>Mari Mengenal Buah</h1>
+    </div>
+    <!-- Descriptions End -->
+
+    <!-- Content -->
+    <div class="content">
+      <!-- Item -->
+      <div class="item" id="buah" onclick="btn1()"><img src="../assets/img/buah/alpukat.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="btn2()"><img src="../assets/img/buah/anggur.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="btn3()"><img src="../assets/img/buah/ceri.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="btn4()"><img src="../assets/img/buah/durian.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="btn5()"><img src="../assets/img/buah/jambu-air.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="btn6()"><img src="../assets/img/buah/jeruk.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="btn7()"><img src="../assets/img/buah/kiwi.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="btn8()"><img src="../assets/img/buah/lemon.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="btn9()"><img src="../assets/img/buah/mangga.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="btn10()"><img src="../assets/img/buah/manggis.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="btn11()"><img src="../assets/img/buah/markisa.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="btn12()"><img src="../assets/img/buah/melon.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="btn13()"><img src="../assets/img/buah/nanas.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="btn14()"><img src="../assets/img/buah/pisang.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="btn15()"><img src="../assets/img/buah/salak.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="btn16()"><img src="../assets/img/buah/semangka.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="btn17()"><img src="../assets/img/buah/sirsak.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="btn18()"><img src="../assets/img/buah/strawberi.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="btn19()"><img src="../assets/img/buah/apel.jpg" alt="apel" /></div>
+      <div class="item" id="buah" onclick="btn20()"><img src="../assets/img/buah/kelengkeng.jpg" alt="kelengkeng" /></div>
+      <!-- Item End -->
+    </div>
+    <!-- Content End -->
+
+    <!-- Navigasi -->
+    <div class="navigation">
+      <div class="navigate" id="back" onclick="kembali()"><img src="../assets/img/icon/icon-kiri.png" alt="" /></div>
+      <div class="navigate" id="next"><img src="../assets/img/icon/icon-kanan.png" alt="" /></div>
+    </div>
+
+    <!-- Sound Item -->
+    <audio id="sound1">
+      <source src="../assets/audio/buah/alpukat.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound2">
+      <source src="../assets/audio/buah/anggur.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound3">
+      <source src="../assets/audio/buah/ceri.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound4">
+      <source src="../assets/audio/buah/durian.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound5">
+      <source src="../assets/audio/buah/jambu.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound6">
+      <source src="../assets/audio/buah/jeruk.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound7">
+      <source src="../assets/audio/buah/kiwi.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound8">
+      <source src="../assets/audio/buah/lemon.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound9">
+      <source src="../assets/audio/buah/mangga.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound10">
+      <source src="../assets/audio/buah/manggis.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound11">
+      <source src="../assets/audio/buah/markisa.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound12">
+      <source src="../assets/audio/buah/melon.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound13">
+      <source src="../assets/audio/buah/nanas.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound14">
+      <source src="../assets/audio/buah/pisang.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound15">
+      <source src="../assets/audio/buah/salak.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound16">
+      <source src="../assets/audio/buah/semangka.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound17">
+      <source src="../assets/audio/buah/srikaya.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound18">
+      <source src="../assets/audio/buah/strawberry.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound19">
+      <source src="../assets/audio/buah/apel.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound20">
+      <source src="../assets/audio/buah/kelengkeng.mp3" type="audio/mp3" />
+    </audio>
+
+    <!-- Script Mengenal Angka -->
+    <script>
+      function btn1() {
+        const suara = document.getElementById("sound1");
+        suara.play();
+      }
+      function btn2() {
+        const suara = document.getElementById("sound2");
+        suara.play();
+      }
+      function btn3() {
+        const suara = document.getElementById("sound3");
+        suara.play();
+      }
+      function btn4() {
+        const suara = document.getElementById("sound4");
+        suara.play();
+      }
+      function btn5() {
+        const suara = document.getElementById("sound5");
+        suara.play();
+      }
+      function btn6() {
+        const suara = document.getElementById("sound6");
+        suara.play();
+      }
+      function btn7() {
+        const suara = document.getElementById("sound7");
+        suara.play();
+      }
+      function btn8() {
+        const suara = document.getElementById("sound8");
+        suara.play();
+      }
+      function btn9() {
+        const suara = document.getElementById("sound9");
+        suara.play();
+      }
+      function btn10() {
+        const suara = document.getElementById("sound10");
+        suara.play();
+      }
+      function btn11() {
+        const suara = document.getElementById("sound11");
+        suara.play();
+      }
+      function btn12() {
+        const suara = document.getElementById("sound12");
+        suara.play();
+      }
+      function btn13() {
+        const suara = document.getElementById("sound13");
+        suara.play();
+      }
+      function btn14() {
+        const suara = document.getElementById("sound14");
+        suara.play();
+      }
+      function btn15() {
+        const suara = document.getElementById("sound15");
+        suara.play();
+      }
+      function btn16() {
+        const suara = document.getElementById("sound16");
+        suara.play();
+      }
+      function btn17() {
+        const suara = document.getElementById("sound17");
+        suara.play();
+      }
+      function btn18() {
+        const suara = document.getElementById("sound18");
+        suara.play();
+      }
+      function btn19() {
+        const suara = document.getElementById("sound19");
+        suara.play();
+      }
+      function btn20() {
+        const suara = document.getElementById("sound20");
+        suara.play();
+      }
+
+      function kembali() {
+        window.location.href = "../index.html";
+      }
+    </script>
+    <!-- Navigasi End -->
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

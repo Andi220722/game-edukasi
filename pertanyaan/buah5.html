@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>Mengenal Buah</title>
+  </head>
+  <body>
+    <!-- Background Video -->
+    <video src="../assets/video/bg.mp4" class="bgv" autoplay muted loop></video>
+    <!-- Background Video End -->
+
+    <!-- Descriptions -->
+    <div class="desc">
+      <h1>Dimanakah Buah Jeruk ?</h1>
+    </div>
+    <!-- Descriptions End -->
+
+    <!-- Content -->
+    <div class="content">
+      <!-- Item -->
+      <div class="item" id="buah" onclick="soundSalah()"><img src="../assets/img/buah/alpukat.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="soundSalah()"><img src="../assets/img/buah/anggur.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="soundSalah()"><img src="../assets/img/buah/ceri.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="soundSalah()"><img src="../assets/img/buah/durian.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="soundSalah()"><img src="../assets/img/buah/jambu-air.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="next()"><img src="../assets/img/buah/jeruk.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="soundSalah()"><img src="../assets/img/buah/kiwi.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="soundSalah()"><img src="../assets/img/buah/lemon.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="soundSalah()"><img src="../assets/img/buah/mangga.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="soundSalah()"><img src="../assets/img/buah/manggis.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="soundSalah()"><img src="../assets/img/buah/markisa.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="soundSalah()"><img src="../assets/img/buah/melon.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="soundSalah()"><img src="../assets/img/buah/nanas.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="soundSalah()"><img src="../assets/img/buah/pisang.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="soundSalah()"><img src="../assets/img/buah/salak.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="soundSalah()"><img src="../assets/img/buah/semangka.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="soundSalah()"><img src="../assets/img/buah/sirsak.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="soundSalah()"><img src="../assets/img/buah/strawberi.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="soundSalah()"><img src="../assets/img/buah/apel.jpg" alt="" /></div>
+      <div class="item" id="buah" onclick="soundSalah()"><img src="../assets/img/buah/kelengkeng.jpg" alt="" /></div>
+      <!-- Item End -->
+    </div>
+    <!-- Content End -->
+    <!-- Notifikasi -->
+    <div class="result-benar" id="result-benar" onclick="clearNotif()">
+      <div class="hore">
+        <img src="../assets/img/icon/benar.png" alt="" />
+      </div>
+    </div>
+    <div class="result-salah" id="result-salah" onclick="clearNotifSalah()">
+      <div class="hore">
+        <img src="../assets/img/icon/salah.png" alt="" />
+      </div>
+    </div>
+    <!-- Notifikasi End -->
+
+    <!-- Sound Yeay -->
+    <audio id="sound-yeay">
+      <source src="../assets/audio/backsound/benar.mp3" />
+    </audio>
+    <audio id="sound-salah">
+      <source src="../assets/audio/backsound/salah.mp3" />
+    </audio>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+      function next() {
+        const suara = document.getElementById("sound-yeay");
+        suara.play();
+        const resultBenar = document.getElementById("result-benar");
+        resultBenar.style.display = "flex";
+        setTimeout(() => {
+          window.location.href = "../selesai.html";
+        }, 2000);
+      }
+    </script>
+  </body>
+</html>

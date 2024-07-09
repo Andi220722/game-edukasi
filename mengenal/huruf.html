@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>Mengenal Huruf</title>
+  </head>
+  <body>
+    <!-- Background Video -->
+    <video src="../assets/video/bg.mp4" class="bgv" autoplay muted loop></video>
+    <!-- Background Video End -->
+
+    <!-- Descriptions -->
+    <div class="desc">
+      <h1>Mari Mengenal Huruf</h1>
+    </div>
+    <!-- Descriptions End -->
+
+    <!-- Content -->
+    <div class="content">
+      <!-- Item -->
+      <div class="item" onclick="btn1()">A</div>
+      <div class="item" onclick="btn2()">B</div>
+      <div class="item" onclick="btn3()">C</div>
+      <div class="item" onclick="btn4()">D</div>
+      <div class="item" onclick="btn5()">E</div>
+      <div class="item" onclick="btn6()">F</div>
+      <div class="item" onclick="btn7()">G</div>
+      <div class="item" onclick="btn8()">H</div>
+      <div class="item" onclick="btn9()">I</div>
+      <div class="item" onclick="btn10()">J</div>
+      <div class="item" onclick="btn11()">K</div>
+      <div class="item" onclick="btn12()">L</div>
+      <div class="item" onclick="btn13()">M</div>
+      <div class="item" onclick="btn14()">N</div>
+      <div class="item" onclick="btn15()">O</div>
+      <div class="item" onclick="btn16()">P</div>
+      <div class="item" onclick="btn17()">Q</div>
+      <div class="item" onclick="btn18()">R</div>
+      <div class="item" onclick="btn19()">S</div>
+      <div class="item" onclick="btn20()">T</div>
+      <div class="item" onclick="btn21()">U</div>
+      <div class="item" onclick="btn22()">V</div>
+      <div class="item" onclick="btn23()">W</div>
+      <div class="item" onclick="btn24()">X</div>
+      <div class="item" onclick="btn25()">Y</div>
+      <div class="item" onclick="btn26()">Z</div>
+      <!-- Item End -->
+    </div>
+    <!-- Content End -->
+
+    <!-- Navigasi -->
+    <div class="navigation">
+      <div class="navigate" id="back" onclick="kembali()"><img src="../assets/img/icon/icon-kiri.png" alt="" /></div>
+      <div class="navigate" id="next"><img src="../assets/img/icon/icon-kanan.png" alt="" /></div>
+    </div>
+    <!-- Navigasi End -->
+
+    <!-- Sound Item -->
+    <audio id="sound1">
+      <source src="../assets/audio/huruf/" type="audio/mp3" />
+    </audio>
+    <audio id="sound2">
+      <source src="../assets/audio/huruf/" type="audio/mp3" />
+    </audio>
+    <audio id="sound3">
+      <source src="../assets/audio/huruf/c.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound4">
+      <source src="../assets/audio/huruf/d.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound5">
+      <source src="../assets/audio/huruf/e.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound6">
+      <source src="../assets/audio/huruf/f.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound7">
+      <source src="../assets/audio/huruf/g.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound8">
+      <source src="../assets/audio/huruf/h.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound9">
+      <source src="../assets/audio/huruf/i.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound10">
+      <source src="../assets/audio/huruf/j.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound11">
+      <source src="../assets/audio/huruf/k.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound12">
+      <source src="../assets/audio/huruf/l.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound13">
+      <source src="../assets/audio/huruf/m.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound14">
+      <source src="../assets/audio/huruf/n.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound15">
+      <source src="../assets/audio/huruf/o.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound16">
+      <source src="../assets/audio/huruf/p.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound17">
+      <source src="../assets/audio/huruf/q.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound18">
+      <source src="../assets/audio/huruf/r.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound19">
+      <source src="../assets/audio/huruf/s.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound20">
+      <source src="../assets/audio/huruf/t.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound21">
+      <source src="../assets/audio/huruf/u.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound22">
+      <source src="../assets/audio/huruf/v.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound23">
+      <source src="../assets/audio/huruf/w.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound24">
+      <source src="../assets/audio/huruf/x.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound25">
+      <source src="../assets/audio/huruf/y.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sound26">
+      <source src="../assets/audio/huruf/z.mp3" type="audio/mp3" />
+    </audio>
+
+    <!-- Script Mengenal Angka -->
+    <script>
+      function btn1() {
+        const suara = document.getElementById("sound1");
+        suara.play();
+      }
+      function btn2() {
+        const suara = document.getElementById("sound2");
+        suara.play();
+      }
+      function btn3() {
+        const suara = document.getElementById("sound3");
+        suara.play();
+      }
+      function btn4() {
+        const suara = document.getElementById("sound4");
+        suara.play();
+      }
+      function btn5() {
+        const suara = document.getElementById("sound5");
+        suara.play();
+      }
+      function btn6() {
+        const suara = document.getElementById("sound6");
+        suara.play();
+      }
+      function btn7() {
+        const suara = document.getElementById("sound7");
+        suara.play();
+      }
+      function btn8() {
+        const suara = document.getElementById("sound8");
+        suara.play();
+      }
+      function btn9() {
+        const suara = document.getElementById("sound9");
+        suara.play();
+      }
+      function btn10() {
+        const suara = document.getElementById("sound10");
+        suara.play();
+      }
+      function btn11() {
+        const suara = document.getElementById("sound11");
+        suara.play();
+      }
+      function btn12() {
+        const suara = document.getElementById("sound12");
+        suara.play();
+      }
+      function btn13() {
+        const suara = document.getElementById("sound13");
+        suara.play();
+      }
+      function btn14() {
+        const suara = document.getElementById("sound14");
+        suara.play();
+      }
+      function btn15() {
+        const suara = document.getElementById("sound15");
+        suara.play();
+      }
+      function btn16() {
+        const suara = document.getElementById("sound16");
+        suara.play();
+      }
+      function btn17() {
+        const suara = document.getElementById("sound17");
+        suara.play();
+      }
+      function btn18() {
+        const suara = document.getElementById("sound18");
+        suara.play();
+      }
+      function btn19() {
+        const suara = document.getElementById("sound19");
+        suara.play();
+      }
+      function btn20() {
+        const suara = document.getElementById("sound20");
+        suara.play();
+      }
+      function btn21() {
+        const suara = document.getElementById("sound21");
+        suara.play();
+      }
+      function btn22() {
+        const suara = document.getElementById("sound22");
+        suara.play();
+      }
+      function btn23() {
+        const suara = document.getElementById("sound23");
+        suara.play();
+      }
+      function btn24() {
+        const suara = document.getElementById("sound24");
+        suara.play();
+      }
+      function btn25() {
+        const suara = document.getElementById("sound25");
+        suara.play();
+      }
+      function btn26() {
+        const suara = document.getElementById("sound26");
+        suara.play();
+      }
+
+      function kembali() {
+        window.location.href = "../index.html";
+      }
+    </script>
+
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

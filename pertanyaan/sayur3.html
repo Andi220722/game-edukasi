@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>Mengenal Sayur</title>
+  </head>
+  <body>
+    <!-- Background Video -->
+    <video src="../assets/video/bg.mp4" class="bgv" autoplay muted loop></video>
+    <!-- Background Video End -->
+
+    <!-- Descriptions -->
+    <div class="desc">
+      <h1>Dimanakah Sayur Terong ?</h1>
+    </div>
+    <!-- Descriptions End -->
+
+    <!-- Content -->
+    <div class="content">
+      <!-- Item -->
+      <div class="item" id="sayur" onclick=""><img src="../assets/img/sayur/bawang-merah.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="soundSalah()"><img src="../assets/img/sayur/bawang-putih.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="soundSalah()"><img src="../assets/img/sayur/bayam.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="soundSalah()"><img src="../assets/img/sayur/brokoli.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="soundSalah()"><img src="../assets/img/sayur/buncis.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="soundSalah()"><img src="../assets/img/sayur/cabai.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="soundSalah()"><img src="../assets/img/sayur/jagung.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="soundSalah()"><img src="../assets/img/sayur/kentang.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="soundSalah()"><img src="../assets/img/sayur/kol.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="soundSalah()"><img src="../assets/img/sayur/labu.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="soundSalah()"><img src="../assets/img/sayur/selada.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="next()"><img src="../assets/img/sayur/terong.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="soundSalah()"><img src="../assets/img/sayur/timun.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="soundSalah()"><img src="../assets/img/sayur/tomat.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="soundSalah()"><img src="../assets/img/sayur/wortel.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="soundSalah()"><img src="../assets/img/sayur/jamur.jpg" alt="jamur" /></div>
+      <div class="item" id="sayur" onclick="soundSalah()"><img src="../assets/img/sayur/daun-bawang.jpg" alt="daun-bawang" /></div>
+      <div class="item" id="sayur" onclick="soundSalah()"><img src="../assets/img/sayur/paprika.jpg" alt="" /></div>
+      <div class="item" id="sayur" onclick="soundSalah()"><img src="../assets/img/sayur/kangkung.webp" alt="kangkung" /></div>
+      <div class="item" id="sayur" onclick="soundSalah()"><img src="../assets/img/sayur/bawang-bombai.jpg" alt="bawang-bombai" /></div>
+      <!-- Item End -->
+    </div>
+    <!-- Content End -->
+    <!-- Notifikasi -->
+    <div class="result-benar" id="result-benar" onclick="clearNotif()">
+      <div class="hore">
+        <img src="../assets/img/icon/benar.png" alt="" />
+      </div>
+    </div>
+    <div class="result-salah" id="result-salah" onclick="clearNotifSalah()">
+      <div class="hore">
+        <img src="../assets/img/icon/salah.png" alt="" />
+      </div>
+    </div>
+    <!-- Notifikasi End -->
+    <!-- Sound Yeay -->
+    <audio id="sound-yeay">
+      <source src="../assets/audio/backsound/benar.mp3" />
+    </audio>
+    <audio id="sound-salah">
+      <source src="../assets/audio/backsound/salah.mp3" />
+    </audio>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+      function next() {
+        const suara = document.getElementById("sound-yeay");
+        suara.play();
+        const resultBenar = document.getElementById("result-benar");
+        resultBenar.style.display = "flex";
+        setTimeout(() => {
+          window.location.href = "sayur4.html";
+        }, 2000);
+      }
+    </script>
+  </body>
+</html>

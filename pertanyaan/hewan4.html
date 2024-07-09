@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>Mengenal Hewan</title>
+  </head>
+  <body>
+    <!-- Background Video -->
+    <video src="../assets/video/bg.mp4" class="bgv" autoplay muted loop></video>
+    <!-- Background Video End -->
+
+    <!-- Descriptions -->
+    <div class="desc">
+      <h1>Dimanakah Hewan Kambing ?</h1>
+    </div>
+    <!-- Descriptions End -->
+
+    <!-- Content -->
+    <div class="content">
+      <!-- Item -->
+      <div class="item" id="hewan" onclick="soundSalah()"><img src="../assets/img/hewan/anjing.jpg" alt="" /></div>
+      <div class="item" id="hewan" onclick="soundSalah()"><img src="../assets/img/hewan/ayam.jpg" alt="" /></div>
+      <div class="item" id="hewan" onclick="soundSalah()"><img src="../assets/img/hewan/babi.jpg" alt="" /></div>
+      <div class="item" id="hewan" onclick="soundSalah()"><img src="../assets/img/hewan/badak.jpg" alt="" /></div>
+      <div class="item" id="hewan" onclick="soundSalah()"><img src="../assets/img/hewan/beruang.jpg" alt="" /></div>
+      <div class="item" id="hewan" onclick="soundSalah()"><img src="../assets/img/hewan/burung-hantu.jpg" alt="" /></div>
+      <div class="item" id="hewan" onclick="soundSalah()"><img src="../assets/img/hewan/gajah.jpg" alt="" /></div>
+      <div class="item" id="hewan" onclick="next()"><img src="../assets/img/hewan/kambing.jpg" alt="" /></div>
+      <div class="item" id="hewan" onclick="soundSalah()"><img src="../assets/img/hewan/kelinci.jpg" alt="" /></div>
+      <div class="item" id="hewan" onclick="soundSalah()"><img src="../assets/img/hewan/kerbau.jpg" alt="" /></div>
+      <div class="item" id="hewan" onclick="soundSalah()"><img src="../assets/img/hewan/kucing.jpg" alt="" /></div>
+      <div class="item" id="hewan" onclick="soundSalah()"><img src="../assets/img/hewan/kuda.jpg" alt="" /></div>
+      <div class="item" id="hewan" onclick="soundSalah()"><img src="../assets/img/hewan/monyet.jpg" alt="" /></div>
+      <div class="item" id="hewan" onclick="soundSalah()"><img src="../assets/img/hewan/panda.jpg" alt="" /></div>
+      <div class="item" id="hewan" onclick="soundSalah()"><img src="../assets/img/hewan/sapi.jpg" alt="" /></div>
+      <div class="item" id="hewan" onclick="soundSalah()"><img src="../assets/img/hewan/serigala.png" alt="" /></div>
+      <div class="item" id="hewan" onclick="soundSalah()"><img src="../assets/img/hewan/singa.jpg" alt="" /></div>
+      <div class="item" id="hewan" onclick="soundSalah()"><img src="../assets/img/hewan/paus.jpg" alt="paus" /></div>
+      <div class="item" id="hewan" onclick="soundSalah()"><img src="../assets/img/hewan/buaya.jpg" alt="buaya" /></div>
+      <div class="item" id="hewan" onclick="soundSalah()"><img src="../assets/img/hewan/bebek.jpg" alt="bebek" /></div>
+      <!-- Item End -->
+    </div>
+    <!-- Content End -->
+    <!-- Notifikasi -->
+    <div class="result-benar" id="result-benar" onclick="clearNotif()">
+      <div class="hore">
+        <img src="../assets/img/icon/benar.png" alt="" />
+      </div>
+    </div>
+    <div class="result-salah" id="result-salah" onclick="clearNotifSalah()">
+      <div class="hore">
+        <img src="../assets/img/icon/salah.png" alt="" />
+      </div>
+    </div>
+    <!-- Notifikasi End -->
+
+    <!-- Sound Yeay -->
+    <audio id="sound-yeay">
+      <source src="../assets/audio/backsound/benar.mp3" />
+    </audio>
+    <audio id="sound-salah">
+      <source src="../assets/audio/backsound/salah.mp3" />
+    </audio>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+      function next() {
+        const suara = document.getElementById("sound-yeay");
+        suara.play();
+        const resultBenar = document.getElementById("result-benar");
+        resultBenar.style.display = "flex";
+        setTimeout(() => {
+          window.location.href = "hewan5.html";
+        }, 2000);
+      }
+    </script>
+  </body>
+</html>
